@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Control</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    
+    <div class="inputs">
+
+
+      
+      
+      <div class="slider">
+        <h1 class="range-label range-label-green">OUTPUT</h1>
+
+        <h2 class="range-label range-label-green">Size</h2>
+<input type="number" id="input-size" value="20" min="10" max="200">
+        
+        <h2 class="range-label range-label-green">Cols</h2>
+        <input type="number" id="cols" value="20">
+       
+        <h2 class="range-label range-label-green">Row</h2>
+         <input type="number" id="rows" value="20">
+        
+        
+      </div>
+      
+       <div class="color">
+
+       <h1 class="range-label range-label-green">COLOR</h1>
+<input type="color" id="colorPicker">
+       
+         <div class="basic-colors">
+           
+<div class="color-box" style="background-color: #D8BB73;"></div>
+<div class="color-box" style="background-color: #00649A;"></div>
+</div> 
+        <h1 class="range-label range-label-green">STYLE</h1>
+         <div id="checkbox-container"></div>
+        <div id="checkbox-container-2"></div>
+    
+         
+        
+         
+         
+         </div>
+    </div>
+
+    <main>
+      
+     <div id="canvas-container">
+        
+    </div>
+      
+    
+    </main>
+    
+    <div class="export">
+       <h1 class="range-label range-label-green">FRAME SIZE</h1>
+      <input type="number" id="input-width" value="400">
+      <input type="number" id="input-height" value="400">
+      <h1 class="range-label range-label-green">EXPORT</h1>
+     <button onclick="exportToPNG()">Export as PNG</button>
+    
+       <button id="start-export">Export GIF</button>
+    </div>
+
+    
+    <script src="sketch.js"></script>
+    <script src="pacman.js"></script>
+     <script src="slash.js"></script>
+     <script src="easing.js"></script>
+   
+  </body>
+</html>

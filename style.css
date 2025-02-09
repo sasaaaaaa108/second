@@ -1,0 +1,122 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+
+}
+
+body {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: 250px 200px; /* Two columns with fixed width */
+  grid-template-rows: auto 200px;
+ grid-gap: 20px;
+  gap: 20px;
+  padding: 30px;
+}
+
+canvas {
+  display: block;
+}
+
+canvas-container {
+  display: block;
+}
+
+
+.slider{
+  display: fixed;
+  gap:5px;
+  margin-top:20px;
+}
+.color{
+  display: fixed;
+  gap:5px;
+  margin-top:20px;
+}
+
+.inputs {
+
+  border: 1px solid rgb(37,37,37);
+  padding: 10px;
+}
+
+.progress {#709596#7#FFFFFF
+  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
+  border: solid 2px #FFFFFF;
+  border-radius: 8px;
+  height: 7px;
+  width: 200px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.progress::-webkit-slider-thumb {
+  width: 15px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-appearance: non
+  cursor: ew-resize;
+  background: #434343;
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('SpaceGrotesk-Regular.ttf') format('truetype'); 
+}
+
+h2 {
+  color: #FFFFFF; 
+  padding: 0;
+  margin: 0;
+  font-size: 12px; 
+  font-family: "SpaceGrotesk";
+}
+
+h1 {
+  color: #FFFFFF; 
+  padding: 0;
+  margin: 20;
+  font-size: 18px; 
+  font-family: "SpaceGrotesk", Calibri, Tahoma, sans-serif;
+}
+
+h3 {
+  color: #FFFFFF; 
+  padding: 0;
+  margin: 20;
+  font-size: 12px; 
+  font-family: "SpaceGrotesk", Calibri, Tahoma, sans-serif;
+}
+.basic-colors {
+  margin-top: 10px;
+}
+
+.color-box {
+  width: 30px;
+  height: 20px;
+  border: 1px solid #D3D3D31C;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color-box:last-child {
+  margin-right: 0;
+}
+
+.export{
+  width: 1250px;
+  border: 1px solid rgb(53,51,51);
+  padding: 10px;
+  grid-column: span 2;
+  
+}
+
+.checkbox-label {
+      color: white; 
+    }
+
+
